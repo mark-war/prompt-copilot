@@ -51,4 +51,8 @@ router.post("/refine", async (req, res) => {
   }
 });
 
+router.get("/health", (req, res) => {
+  res.send("ok");
+});
+
 export default router;

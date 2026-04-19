@@ -1,0 +1,12 @@
+{
+  "name": "prompt-copilot",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
